@@ -1,4 +1,6 @@
-import { Event } from "./pages/Event";
+import { ApolloProvider } from "@apollo/client";
+import { Router } from "./Router";
+import { client } from "./lib/apollo";
 // import * as dotenv from 'dotenv';
 // dotenv.config();
 
@@ -6,9 +8,11 @@ import { Event } from "./pages/Event";
 function App() {
 
   return (
-    <div>
-      <Event />
-    </div>
+    <ApolloProvider client={client}>
+      <div>
+        <Router />
+      </div>
+    </ApolloProvider>
   )
 }
 
