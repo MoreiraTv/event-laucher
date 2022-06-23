@@ -1,6 +1,6 @@
-import { gql, useQuery } from "@apollo/client";
-import { useEffect } from "react";
 import { Event } from "./pages/Event";
+// import * as dotenv from 'dotenv';
+// dotenv.config();
 
 
 function App() {
